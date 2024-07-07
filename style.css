@@ -20,6 +20,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  transform: rotate(30deg);
 }
 .table__front-side {
   width: 180px;
@@ -40,7 +41,7 @@ body {
   overflow: hidden;
 }
 .table__backside {
-  margin-left: 200px;
+  margin-left: 100px;
   width: 180px;
   height: 100px;
   background: #ee529c;
@@ -61,6 +62,7 @@ body {
 }
 .table__element {
   margin-left: -100px;
+  margin-top: 5px;
   border-radius: 50%;
   border: 2px solid;
 }
@@ -68,34 +70,65 @@ body {
   width: 30px;
   height: 30px;
   background: #000;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
 }
 .table__element_pink-light {
   width: 10px;
   height: 10px;
   background: #ec8dba;
   border-color: #ec8dba;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
 }
 .table__element_pink {
   width: 20px;
   height: 20px;
   background: #ee529c;
   border-color: #ee529c;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-delay: 0.3s;
 }
 .table__element_grey {
   width: 5px;
   height: 5px;
   background: #dfdfdf;
   border-color: #dfdfdf;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
 }
 .table__block-animation {
   position: absolute;
   top: 0px;
   left: 158px;
-  width: 300px;
+  width: 150px;
   height: 96px;
   border-radius: 40px/96px;
   overflow: hidden;
   border: 2px solid rgba(0, 0, 0, 0);
 }
 
-@keyframes move {}/*# sourceMappingURL=style.css.map */
+@keyframes move {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 130px;
+  }
+}/*# sourceMappingURL=style.css.map */
