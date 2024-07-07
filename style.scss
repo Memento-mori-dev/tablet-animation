@@ -1,0 +1,95 @@
+$black: #000;
+$white: #fff;
+$pink: #ee529c;
+$pinkLight: #ec8dba;
+$grey: #bcbec0;
+$greyLight: #dfdfdf;
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $grey;
+}
+
+// del
+
+.test{
+    position: relative;
+
+    & img{
+        position: absolute;
+        top: -139px;
+        left: -13px;
+
+        display: block;
+
+        opacity: .3;
+    }
+}
+
+// del
+
+
+// tablet start
+
+.table{
+    display: flex;
+    align-items: center;
+
+
+    &__front-side{
+        width: 180px;
+        height: 100px;
+
+        background: $black;
+
+        border-radius: 50px 0px 0px 50px;
+
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -22px;
+
+            width: 40px; 
+            height: calc(100px - 4px);
+
+            background-color: $white;
+            border-radius: 100px/200px;
+            border: 2px solid $black;
+        }
+    }
+
+    &__backside{
+        margin-left: 200px;
+
+        width: 180px;
+        height: 100px;
+
+        background: $pink;
+
+        border-radius: 0px 50px 50px 0px;
+
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -22px;
+
+            width: 40px; 
+            height: calc(100px - 4px);
+
+            background-color: $pink;
+            border-radius: 100px/200px;
+            border: 2px solid $pink;
+        }
+    }
+}
+
+
+// tablet start
