@@ -71,7 +71,7 @@ body {
   height: 30px;
   background: #000;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in;
@@ -83,7 +83,7 @@ body {
   background: #ec8dba;
   border-color: #ec8dba;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in;
@@ -95,7 +95,7 @@ body {
   background: #ee529c;
   border-color: #ee529c;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in;
@@ -107,7 +107,7 @@ body {
   background: #dfdfdf;
   border-color: #dfdfdf;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in;

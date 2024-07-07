@@ -34,7 +34,7 @@ body{
 
 @mixin move ($delay: 0){
     animation-name: move;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
